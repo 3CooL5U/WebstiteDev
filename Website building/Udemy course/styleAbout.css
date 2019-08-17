@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+body{
+    font-family: 'Handlee', cursive;
+    font-size: 14px;
+    color: dimgray;
+}
+
+#wrapper{
+    border: 1px solid #eeeeee;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+header h1{
+    font-size: 2em;
+    color: black;
+}
+
+nav ul{
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    list-style-type: none;
+    display:  inline;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    border-right: 1px solid #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    background-color: darkblue;
+}
+
+#content article{
+    width: 70%;
+    float: left;
+    clear: both;
+    padding: 2%;
+    margin-bottom: 20px;
+}
+
+#content aside{
+    width: 24%;
+    background-color: cornsilk;
+    margin-left: 74%;
+    padding: 1%;
+}
+
+footer{
+    padding-top: 20px;
+    text-align: center;
+    height: 100px;
+    background-color: #CCC;
+    clear: both;
+}
+
+@media screen and (max-width: 800px){
+    #content article{
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+
+    #content aside{
+        width: 100%;
+        background-color: cornsilk;
+        margin-left: 0;
+        padding: 0;
+    }
+    
+    #wrapper{
+        border: 0px solid #eeeeee;
+        width: 100%;
+        margin: 0;
+    }   
+}
